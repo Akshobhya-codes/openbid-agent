@@ -57,3 +57,9 @@ Fill in the keys in `.env.local`. Each key has its link in a comment. The file i
 ## Architecture
 
 `src/lib/pipeline.ts` orchestrates discovery (`discovery.ts`), Senso (`senso.ts`), OpenAI (`ai.ts`), Guava (`guava.ts`), quote normalization (`quote.ts`), constraint evaluation (`evaluate.ts`), Stripe (`stripe.ts`) and Amplitude (`amplitude.ts`). Runs are stored as JSON in `data/runs/`. Guava calls hold a WebSocket open, so run this on a long-lived Node server (`next dev` / `next start`), not serverless.
+
+## Demo video
+
+[Watch the 3-minute demo with narration](demo/OpenBid-demo.mp4) ([direct link](https://github.com/Akshobhya-codes/openbid-agent/raw/main/demo/OpenBid-demo.mp4)).
+
+**Call our agent:** +1 (484) 317-5593 and play the restaurant. Start it with `npm run agent:listen`.
