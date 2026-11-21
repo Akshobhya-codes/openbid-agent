@@ -1,0 +1,120 @@
+{
+  "snapshotNote": "Catalog snapshot compiled for the OpenBid demo on 2026-11-20. Prices are a hand-built snapshot, not live prices; each price cites the snapshot file and the vendor's public catering page.",
+  "vendors": [
+    {
+      "id": "panda-express",
+      "name": "Panda Express",
+      "sourceType": "catalog",
+      "address": "Demo location",
+      "distanceMiles": 1.8,
+      "docFile": "data/vendor-docs/panda-express.md",
+      "catalog": {
+        "sourceUrl": "https://www.pandaexpress.com/catering",
+        "snapshotFile": "data/vendors.json#panda-express",
+        "snapshotDate": "2026-11-20",
+        "deliveryFee": 9.99,
+        "minimumOrder": 150,
+        "leadTimeMinutes": 60,
+        "deliveryBufferMinutes": 10,
+        "maxMealsPerOrder": 100,
+        "items": [
+          {
+            "sku": "px-oc-plate",
+            "name": "Catering Plate: Orange Chicken + Chow Mein",
+            "category": "standard",
+            "price": 10.5,
+            "labels": []
+          },
+          {
+            "sku": "px-bb-plate",
+            "name": "Catering Plate: Broccoli Beef + Fried Rice",
+            "category": "standard",
+            "price": 10.9,
+            "labels": []
+          },
+          {
+            "sku": "px-kp-plate",
+            "name": "Catering Plate: Kung Pao Chicken + White Rice",
+            "category": "standard",
+            "price": 10.5,
+            "labels": [
+              "contains peanuts"
+            ]
+          },
+          {
+            "sku": "px-veg-plate",
+            "name": "Vegetarian Plate: Eggplant Tofu + Super Greens + Chow Mein",
+            "category": "vegetarian",
+            "price": 9.9,
+            "labels": [
+              "vegetarian"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "chipotle",
+      "name": "Chipotle",
+      "sourceType": "catalog",
+      "address": "Demo location",
+      "distanceMiles": 2.4,
+      "docFile": "data/vendor-docs/chipotle.md",
+      "catalog": {
+        "sourceUrl": "https://www.chipotle.com/catering",
+        "snapshotFile": "data/vendors.json#chipotle",
+        "snapshotDate": "2026-11-20",
+        "deliveryFee": 4.99,
+        "minimumOrder": 100,
+        "leadTimeMinutes": 45,
+        "deliveryBufferMinutes": 20,
+        "maxMealsPerOrder": 200,
+        "items": [
+          {
+            "sku": "cmg-chicken-bowl",
+            "name": "Individual Chicken Burrito Bowl",
+            "category": "standard",
+            "price": 12.45,
+            "labels": []
+          },
+          {
+            "sku": "cmg-steak-bowl",
+            "name": "Individual Steak Burrito Bowl",
+            "category": "standard",
+            "price": 13.95,
+            "labels": []
+          },
+          {
+            "sku": "cmg-veggie-bowl",
+            "name": "Individual Veggie Bowl with Guacamole",
+            "category": "vegetarian",
+            "price": 11.45,
+            "labels": [
+              "vegetarian"
+            ]
+          },
+          {
+            "sku": "cmg-sofritas-bowl",
+            "name": "Individual Sofritas Bowl",
+            "category": "vegan",
+            "price": 11.45,
+            "labels": [
+              "vegan",
+              "vegetarian"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "local-kitchen",
+      "name": "Local Kitchen",
+      "sourceType": "phone",
+      "address": "Demo restaurant (phone rings the presenter)",
+      "distanceMiles": 0.6,
+      "docFile": "data/vendor-docs/local-kitchen.md",
+      "phoneEnvKey": "DEMO_RESTAURANT_PHONE",
+      "demo": true
+    }
+  ]
+}
